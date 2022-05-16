@@ -6,13 +6,16 @@
 /*   By: cmorales <moralesrojascr@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 15:51:58 by cmorales          #+#    #+#             */
-/*   Updated: 2022/05/03 21:36:09 by cmorales         ###   ########.fr       */
+/*   Updated: 2022/05/16 19:37:27 by cmorales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
+// searches for the first occurrence of the character "c" in the first "n" bytes of the string pointed by the argument "s"
+
+
 {
 	size_t	pos;
 

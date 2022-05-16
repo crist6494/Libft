@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmorales <cmorales@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: cmorales <moralesrojascr@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 17:55:39 by cmorales          #+#    #+#             */
-/*   Updated: 2022/04/26 12:48:52 by cmorales         ###   ########.fr       */
+/*   Updated: 2022/05/16 19:40:11 by cmorales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
+// Compares the first "n" bytes of memory area "s1 and memory area "s2"
 {
 	size_t			pos;
 	unsigned char	*st1;

@@ -6,13 +6,14 @@
 /*   By: cmorales <moralesrojascr@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 14:48:57 by cmorales          #+#    #+#             */
-/*   Updated: 2022/05/12 16:21:50 by cmorales         ###   ########.fr       */
+/*   Updated: 2022/05/16 19:50:41 by cmorales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_atoi(const char *str)
+// Converts the string "str" to integer type int
 {
 	size_t	pos;
 	size_t	neg;
@@ -23,7 +24,7 @@ int	ft_atoi(const char *str)
 	num = 0;
 	while ((str[pos] >= 9 && str[pos] <= 13) || (str[pos] == 32))
 		pos++;
-	if (str[pos] == '-')
+	if (str[pos] == '-') //Negative number
 	{
 		neg *= -1;
 		pos++;
@@ -32,7 +33,7 @@ int	ft_atoi(const char *str)
 		pos++;
 	while (str[pos] >= '0' && str[pos] <= '9')
 	{
-		num = num * 10 + (str[pos] - '0');
+		num = num * 10 + (str[pos] - '0'); //Adding dozens,hundreds,millions...
 		pos++;
 	}
 	num *= neg;

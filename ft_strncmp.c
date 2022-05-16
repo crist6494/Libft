@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmorales <cmorales@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: cmorales <moralesrojascr@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 14:16:34 by cmorales          #+#    #+#             */
-/*   Updated: 2022/04/23 14:34:56 by cmorales         ###   ########.fr       */
+/*   Updated: 2022/05/16 19:25:43 by cmorales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
+// Compare "s1" and "s2" to the number of bytes that you specifities
 {
 	size_t	pos;
 
